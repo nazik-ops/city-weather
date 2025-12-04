@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        background-image: linear-gradient(to right, #1685ca 0%, #26a0da  51%, #3a647e  100%);
+       
+        }
+   .weather{
+    width: 260px;
+     height: 250px;
+    border:  2px solid rgb(6, 108, 75);
+    border-radius: 20px;
+    background-color: aliceblue; 
+  
+   }
+   input{
+     margin-left: 10px;
+     width: 220px;
+     border-radius: 20px;
+     height: 30px;
+     margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(11, 72, 49);
+
+   }
+   button{
+     margin-left: 20px;
+     width: 200px;
+     border-radius: 20px;
+     height: 30px;
+     margin-top: 20px;
+     font-weight: 700;
+     color: #d9dee1;
+    background-image: linear-gradient(to right, #294353 0%, #26a0da  51%, #314755  100%)
+              
+   }
+   #weatherInfo{
+     margin-left: 60px;
+     font-weight: 700; 
+     color: rgb(1, 49, 33);
+   }
+    </style>
+</head>
+<body>
+    <div class="weather">
+    <input type="text" id="cityName">
+     <button id="btn" onclick="getWeather()">Аба ырайын билүү</button>
+      <div id="weatherInfo">
+        <p >Шаар:<span id="city">----</span> </p>
+        <p>Температура: <span id="temp">---</span>°C</p>
+        <p>Аба ырайы: <span id="desc">---</span></p>
+    </div></div>
+     <script src="./script.js"></script>
+</body>
+</htm
